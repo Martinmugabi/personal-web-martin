@@ -1,0 +1,75 @@
+
+/*hero section */
+.container{
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin: 5px;
+}
+.hero-content{
+
+}
+.hero-stats{
+
+}
+.stat-card{
+    border-radius: 5px;
+    box-shadow: none;
+    border-color: blue;
+}
+
+
+
+
+/* about us codes */
+
+.section about{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    text-align: center;
+    justify-items: center;
+}
+#about{
+    flex-wrap: wrap;
+}
+.container11{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+}
+#wrap{
+    flex-wrap: wrap;
+}
+.section-title{
+    text-align: center;
+    font-weight: 500;
+    text-decoration: dashed;
+}
+
+.about-content >img{
+           border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-text{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+     
+.about-features{
+    display: flex;
+    flex-wrap: wrap;
+}
+#wrap{
+    flex-wrap: wrap;
+}
+.feature{
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px;
+    padding: 30px;
+    margin: 5px;
+    justify-content: center;
+}
