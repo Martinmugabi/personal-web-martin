@@ -1,64 +1,23 @@
 
 /*hero section */
 .container{
-    justify-content: center;
-    justify-items: center;
-    display: flex;
-    margin: 5px;
 }
 .hero-content{
 
 }
 .hero-stats{
-
+    display: flex;
+    margin: 5px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .stat-card{
-    border-radius: 5px;
-    box-shadow: none;
-    border-color: blue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px;
+    width: 180px;
+    height: 150px;
 }
 
-
-
-
-/* about us codes */
-
-.section about{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 5px;
-    text-align: center;
-    justify-items: center;
-}
-#about{
-    flex-wrap: wrap;
-}
-.container11{
-    display: flex;
-    margin: 5px;
-    justify-content: center;
-}
-#wrap{
-    flex-wrap: wrap;
-}
-.section-title{
-    text-align: center;
-    font-weight: 500;
-    text-decoration: dashed;
-}
-
-.about-content >img{
-           border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.about-text{
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-     
 .about-features{
     display: flex;
     flex-wrap: wrap;
@@ -72,4 +31,64 @@
     padding: 30px;
     margin: 5px;
     justify-content: center;
+}
+
+
+
+
+/* about us codes */
+.container11{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0 5%;
+}
+.about-content >img{
+     border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    justify-items: center;
+}
+.dbtn{
+    background-color: rgb(4, 4, 95);
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 200px;
+    color: white;
+    justify-items: center;
+}
+.dbtn:hover{
+    background-color:rgb(33, 18, 247) ;
+}
+
+
+/* skiils section */
+.skill-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 5px;
+}
+.skill-cards{
+  border-radius: 5px;
+  height: fit-content;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  gap: 20px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px 5px;
+}
+ 
+
+/* portio-container*/
+.portio-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin:px;
+}
+.porti-image >img{
+  border-radius: 10px;
 }
