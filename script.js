@@ -48,3 +48,135 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 300);
   });
 });
+
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile Menu Toggle
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav45');
+  
+  menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('active');
+    this.classList.toggle('active');
+  });
+  
+  // Close mobile menu when clicking a nav link
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      nav.classList.remove('active');
+      menuToggle.classList.remove('active');
+    });
+  });
+  
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        const headerHeight = document.querySelector('.header').offsetHeight;
+        const targetPosition = targetElement.offsetTop - headerHeight;
+        
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
+  // FAQ Accordion
+  const questions = document.querySelectorAll('.question');
+  questions.forEach(question => {
+    question.addEventListener('click', function() {
+      const item = this.parentElement;
+      item.classList.toggle('active');
+      
+      // Close other open items
+      questions.forEach(q => {
+        if (q !== this && q.parentElement.classList.contains('active')) {
+          q.parentElement.classList.remove('active');
+        }
+      });
+    });
+  });
+  
+  // Form Submission
+  const contactForm = document.querySelector('.contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Simulate form submission
+      const formMessage = document.querySelector('.form-message');
+      formMessage.style.display = 'block';
+      
+      // Reset form
+      this.reset();
+      
+      // Hide message after 5 seconds
+      setTimeout(() => {
+        formMessage.style.display = 'none';
+      }, 5000);
+    });
+  }
+  
+  // Animate skill bars on scroll
+  const skillBars = document.querySelectorAll('.skill-fill');
+  
+  function animateSkillBars() {
+    skillBars.forEach(bar => {
+      const percent = bar.style.width;
+      bar.style.width = '0';
+      
+      setTimeout(() => {
+        bar.style.width = percent;
+      }, 100);
+    });
+  }
+  
+  // Intersection Observer for animations
+  const observerOptions = {
+    threshold: 0.1
+  };
+  
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        if (entry.target.id === 'skills-container') {
+          animateSkillBars();
+        }
+        
+        entry.target.classList.add('animated');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+  
+  // Observe sections
+  const sections = document.querySelectorAll('section, .container[id]');
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+  
+  // Current year for footer
+  const yearSpan = document.querySelector('.current-year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+  
+  // Portfolio image lightbox (example implementation)
+  const portfolioImages = document.querySelectorAll('.porti-image a');
+  portfolioImages.forEach(image => {
+    image.addEventListener('click', function(e) {
+      e.preventDefault();
+      // In a real implementation, you would show a lightbox/modal here
+      console.log('Portfolio image clicked:', this.href);
+    });
+  });
+});
