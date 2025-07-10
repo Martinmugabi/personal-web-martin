@@ -213,10 +213,48 @@ text-align: center;
 .contact-container{
     display: flex;
     flex-wrap: wrap;
-    justify-items: center;
+    margin: 30px;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 30px;
 }
 
+.contact-me{
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 5px;
+    justify-content: center;
+}
 
+.contact-form{
+    height: fit-content;
+    width: 300px;
+    right: 50%;
+    left: 50%;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 5px;
+    justify-content: center;
+    transform: translate(-50 ,50);
+    transition: 0.3ms;
+    text-align: center;
+}
+
+.btn1234{
+     background-color:#007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    width: 180px;
+    justify-items: center;
+}
+.btn1234:hover{
+    background-color: rgb(50, 50, 247);
+}
 
 
 /* connect-container */
