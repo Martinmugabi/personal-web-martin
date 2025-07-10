@@ -34,3 +34,17 @@ skills.forEach(skill => {
     fill.style.width = skill.percentage + '%';
   }, 100);
 });
+
+
+
+
+// Animate skill bars on page load
+document.addEventListener("DOMContentLoaded", function() {
+  const skillFills = document.querySelectorAll('.skill-fill');
+  skillFills.forEach(fill => {
+    const percentage = fill.getAttribute('data-percentage');
+    setTimeout(() => {
+      fill.style.width = percentage + '%';
+    }, 300);
+  });
+});
