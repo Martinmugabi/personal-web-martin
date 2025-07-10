@@ -100,21 +100,28 @@
 
 
 /* skiils section */
-.skill-container{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-margin: 5px;
+.skill {
+  margin-bottom: 16px;
 }
-.skill-cards{
-  border-radius: 5px;
-  height: fit-content;
-  width: 300px;
-  height: 300px;
-  margin: 5px;
-  gap: 20px;
-  box-sizing: border-box;
-  box-shadow: 5px 5px 5px 5px;
+.skill-label {
+  font-weight: bold;
+}
+.skill-bar {
+  background: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 24px;
+  margin-top: 4px;
+}
+.skill-fill {
+  background: #4caf50;
+  height: 100%;
+  width: 0;
+  color: #fff;
+  text-align: right;
+  padding-right: 8px;
+  line-height: 24px;
+  transition: width 1s;
 }
  
 
