@@ -1128,3 +1128,67 @@ img {
     flex: 1 1 100%;
   }
 }
+
+
+
+
+
+/* Center grid items in portfolio, services, projects, blogs, etc. */
+.portio-container,
+.services-container,
+.project-container,
+.testmonies-container,
+.Blog-container,
+.connect-padds {
+  justify-items: center;
+  align-items: center;
+  margin: 60px ;
+}
+
+/* Portfolio Animation */
+@keyframes porti-pop {
+  0% {
+    transform: scale(0.8) rotate(-5deg);
+    opacity: 0.5;
+  }
+  60% {
+    transform: scale(1.05) rotate(2deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.porti-image {
+  animation: porti-pop 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Add hover effect for portfolio images */
+.porti-image:hover {
+  animation: porti-pop 0.5s cubic-bezier(0.23, 1, 0.32, 1) reverse;
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 10px 30px rgba(52, 152, 219, 0.2);
+}
+
+
+/* Education Section - add some words styling and animation */
+.edu-title, .edu-subtitle {
+  text-align: center;
+  animation: edu-fadein 1s ease;
+}
+
+@keyframes edu-fadein {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+.educ-captions p {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-style: italic;
+  margin-top: 10px;
+  animation: edu-fadein 1.2s ease;
+}
+
