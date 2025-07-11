@@ -311,6 +311,11 @@ img {
 }
 
 /* Skills Section */
+.section-skills {
+  padding: 80px 0;
+  background-color: #f5f7fa;
+  display:flex ;
+}
 #skills-container {
   max-width: 800px;
   margin: 0 auto;
@@ -318,6 +323,7 @@ img {
   background-color: white;
   border-radius: 10px;
   box-shadow: var(--shadow);
+  width: 100%;
 }
 
 .skill {
@@ -328,11 +334,11 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .skill-bar {
-  height: 10px;
+  height: 30px;
   background-color: #ecf0f1;
   border-radius: 5px;
   overflow: hidden;
@@ -800,6 +806,8 @@ img {
   box-shadow: var(--shadow);
   transition: var(--transition);
   text-align: center;
+  margin: 15px;
+  gap: 20px;
 }
 
 .aword-card:hover {
@@ -847,6 +855,9 @@ img {
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  height: 350px;
+  width: 320px;
+  background-color: aliceblue;
 }
 
 .blog-card:hover {
