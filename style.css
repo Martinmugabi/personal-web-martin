@@ -28,6 +28,8 @@ body {
   color: var(--text-color);
   background-color: #f9f9f9;
   overflow-x: hidden;
+  justify-items: center;
+  justify-content: center;
 }
 
 a {
@@ -407,6 +409,8 @@ img {
   text-align: center;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  height: 250px;
+  width: 300px;
 }
 
 .service-card:hover {
