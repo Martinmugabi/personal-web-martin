@@ -270,7 +270,7 @@ img {
 /* About Section */
 .section-about {
   padding: 80px 0;
-  background-color: white;
+  background-color: rgb(216, 216, 230);
 }
 
 .about-content {
@@ -313,7 +313,7 @@ img {
 /* Skills Section */
 .section-skills {
   padding: 80px 0;
-  background-color: #f5f7fa;
+  background-color: #ebf0f7;
   display:flex ;
 }
 #skills-container {
@@ -444,11 +444,11 @@ img {
 /* Education Section */
 #education {
   padding: 80px 0;
-  background-color: #f5f7fa;
+  background-color: #3e86f1;
 }
 
 .education-container {
-  background-color: white;
+  background-color: rgb(229, 228, 240);
   padding: 40px;
   border-radius: 10px;
   box-shadow: var(--shadow);
@@ -555,10 +555,12 @@ img {
   padding: 40px;
   border-radius: 10px;
   box-shadow: var(--shadow);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contact-me {
-  flex: 1 1 300px;
+  flex:block;
   padding: 30px;
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -567,7 +569,7 @@ img {
 .contact-me strong {
   font-size: 1.1rem;
   color: var(--dark-color);
-  display: block;
+  display: inline-block;
   margin-top: 15px;
 }
 
@@ -628,6 +630,7 @@ img {
   cursor: pointer;
   transition: var(--transition);
   border: none;
+  
 }
 
 .btn1234:hover {
@@ -1021,7 +1024,8 @@ img {
 }
 
 .log-image img {
-  border-radius: 10px;
+  border-radius: 200%;
+border: #333;
 }
 
 .nav-links {
@@ -1048,6 +1052,10 @@ img {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+.order{
+  flex: auto auto;
+  display: flex;
 }
 
 .social-icons {
@@ -1095,7 +1103,7 @@ img {
   }
   
   .nav45.active {
-    left: 0;
+    left:0;
   }
   
   .nav-list45 {
