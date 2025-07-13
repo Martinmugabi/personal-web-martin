@@ -444,7 +444,6 @@ img {
 /* Education Section */
 #education {
   padding: 80px 0;
-  background-color: #3e86f1;
 }
 
 .education-container {
@@ -1307,11 +1306,4 @@ Web Images Section
   
 }
 
-@keyframes rotateImages {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 
