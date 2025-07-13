@@ -1295,6 +1295,7 @@ Web Images Section
   align-items: center;
   overflow: hidden;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .web-images img {
@@ -1303,7 +1304,7 @@ Web Images Section
   width: 200px;
   height: 200px;
   object-fit: cover;
-  animation: rotateImages 20s linear infinite;
+  
 }
 
 @keyframes rotateImages {
