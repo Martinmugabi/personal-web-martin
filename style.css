@@ -1277,3 +1277,40 @@ have a fade-in effect with a
     transform: scale(1) rotate(0deg);
   }
 }
+
+
+
+/* 
+Web Images Section 
+
+/* Web Images Section */
+.web-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.web-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.web-images img {
+  margin: 10px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  animation: rotateImages 20s linear infinite;
+}
+
+@keyframes rotateImages {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+
