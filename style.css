@@ -444,6 +444,7 @@ img {
 /* Education Section */
 #education {
   padding: 80px 0;
+  background-color: #3e86f1;
 }
 
 .education-container {
@@ -1276,34 +1277,3 @@ have a fade-in effect with a
     transform: scale(1) rotate(0deg);
   }
 }
-
-
-
-/* 
-Web Images Section 
-
-/* Web Images Section */
-.web-container {
-  text-align: center;
-  padding: 20px;
-}
-
-.web-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.web-images img {
-  margin: 10px;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  
-}
-
-
