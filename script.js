@@ -1,3 +1,19 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+        if (body.dataset.theme === 'dark') {
+            body.dataset.theme = 'light';
+        } else {
+            body.dataset.theme = 'dark';
+        }
+    });
+});
+
+
+
+
 const skills = [
   { name: "HTML", percentage: 95 },
   { name: "CSS", percentage: 90 },
