@@ -26,7 +26,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
-  background-color: #f9f9f9;
+  background-color: #f8e6e6;
   overflow-x: hidden;
   justify-items: center;
   justify-content: center;
@@ -127,7 +127,7 @@ img {
 
 .logo {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--primary-color);
 }
 
@@ -202,15 +202,37 @@ img {
 
 
 /* Hero Section */
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  /* Gradient for the text */
+  background: linear-gradient(to right, red, purple, rgb(247, 165, 178));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .hero {
   padding: 150px 0 80px;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  /* Gradient for the background */
+  background: linear-gradient(135deg, rgba(66, 14, 14, 0.1), rgba(128, 0, 128, 0.1), rgba(255, 192, 203, 0.1), rgba(144, 238, 144, 0.1));
   text-align: center;
 }
 
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+}
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--dark-color);
+  position: relative;
+  padding-bottom: 10px;
+  background: linear-gradient(to right, red, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-title {
@@ -381,6 +403,8 @@ img {
   box-shadow: var(--shadow);
   transition: var(--transition);
   position: relative;
+  justify-items: center;
+  justify-content: center;
 }
 
 .porti-image:hover {
@@ -410,7 +434,7 @@ img {
 }
 
 .service-card {
-  background-color: #f9f9f9;
+  background-color: #d6edfa;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
