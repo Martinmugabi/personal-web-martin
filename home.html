@@ -53,18 +53,60 @@
     </nav>
   </div>
 </header>
-
-          <section class="hero" id="home">
-    <div class="hero-content">
-        <h1 class="hero-title">Hi,<br> I'm Martin Mugabi</h1>
-        <p class="hero-text">A Junior Software Developer with a Passion for Innovation</p>
-        <video autoplay loop muted playsinline class="hero-video">
-        <source src="path/to/your/video.mp4" type="video/mp4">
-    </video><br>
-        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-container">
+    <!-- Video Background -->
+    <div class="hero-video-wrapper">
+      <video autoplay loop muted playsinline class="hero-video" aria-hidden="true">
+        <source src="assets/videos/hero-background.mp4" type="video/mp4">
+        <source src="assets/videos/hero-background.webm" type="video/webm">
+        <!-- Fallback image if video doesn't load -->
+        <img src="assets/images/hero-fallback.jpg" alt="Decorative background" class="hero-fallback">
+      </video>
+      <div class="video-overlay"></div>
     </div>
-</section>
 
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <div class="hero-text-content">
+        <h1 class="hero-title">
+          <span class="greeting">Hi,</span>
+          <span class="name">I'm Martin Mugabi</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          <span class="typing-text">Junior Software Developer</span>
+          <span class="typed-cursor">|</span>
+        </p>
+        
+        <p class="hero-description">
+          Passionate about creating innovative solutions and clean, efficient code
+        </p>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-hero">
+          <span class="btn-text">Get in Touch</span>
+          <i class="fas fa-arrow-right btn-icon"></i>
+        </a>
+        
+        <a href="#projects" class="btn btn-secondary btn-hero">
+          <span class="btn-text">View My Work</span>
+          <i class="fas fa-code btn-icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" aria-label="Scroll down">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="arrow"></div>
+    </div>
+  </div>
+</section>
        
                       <!-- About Us Section -->
              
