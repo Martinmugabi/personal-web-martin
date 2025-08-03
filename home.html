@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Martin's personal website</title>
+    <!--link to external css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+       <!-- Header/Navigation Section -->
+<header class="header">
+  <div class="container">
+    <div class="header-content">
+      <a href="#home" class="logo">Martin</a>
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="hamburger">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+
+    <!-- Primary Navigation -->
+    <nav class="primary-nav" id="primary-navigation">
+      <ul class="nav-list">
+        <!-- Main Navigation Items -->
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+        
+        <!-- Dropdown Menu for Additional Sections -->
+        <li class="nav-item dropdown">
+          <button class="dropdown-toggle" aria-expanded="false" aria-controls="more-dropdown">
+            More <i class="fas fa-chevron-down dropdown-icon"></i>
+          </button>
+          <ul class="dropdown-menu" id="more-dropdown">
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#awards" class="nav-link">Awards</a></li>
+            <li><a href="#blog" class="nav-link">Blog</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item nav-action"><a href="signin.html" class="btn btn-signin">Sign In</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-container">
+    <!-- Video Background -->
+    <div class="hero-video-wrapper">
+      <video autoplay loop muted playsinline class="hero-video" aria-hidden="true">
+        <source src="assets/videos/hero-background.mp4" type="video/mp4">
+        <source src="assets/videos/hero-background.webm" type="video/webm">
+        <!-- Fallback image if video doesn't load -->
+        <img src="assets/images/hero-fallback.jpg" alt="Decorative background" class="hero-fallback">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <div class="hero-text-content">
+        <h1 class="hero-title">
+          <span class="greeting">Hi,</span>
+          <span class="name">I'm Martin Mugabi</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          <span class="typing-text">Junior Software Developer</span>
+          <span class="typed-cursor">|</span>
+        </p>
+        
+        <p class="hero-description">
+          Passionate about creating innovative solutions and clean, efficient code
+        </p>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-hero">
+          <span class="btn-text">Get in Touch</span>
+          <i class="fas fa-arrow-right btn-icon"></i>
+        </a>
+        
+        <a href="#projects" class="btn btn-secondary btn-hero">
+          <span class="btn-text">View My Work</span>
+          <i class="fas fa-code btn-icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" aria-label="Scroll down">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="arrow"></div>
+    </div>
+  </div>
+</section>
+
+       <!-- About Me Section -->
+<section class="section-about" id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-content">
+            <div class="hero-image">
+                <img src="images/profile.jpg" 
+                     alt="Martin Mugabi profile photo" 
+                     width="300" 
+                     height="300"
+                     class="profile-img">
+            </div>
+            
+            <div class="about-text">
+                <p class="intro-text">
+                    I'm a passionate junior developer with strong foundation in JavaScript, React, Node.js, and Python. 
+                    I enjoy solving complex problems and creating efficient, user-friendly applications. 
+                    Eager to contribute to meaningful projects and grow as part of a development team.
+                </p>
+                
+               <div class="action-buttons">
+  <a href="certificates/Martin-Mugabi-CV.pdf" 
+     download="Martin-Mugabi-CV.pdf"
+     class="btn btn-download"
+     id="downloadCvBtn">
+    <i class="fas fa-download"></i> Download CV
+  </a>
+</div>
+                
+                <div class="social-links">
+                    <h3 class="connect-title">Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/YOUR_USERNAME" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/YOUR_USERNAME" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/YOUR_USERNAME" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://facebook.com/YOUR_USERNAME" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/YOUR_USERNAME" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ 
+      <!-- Skills Section -->
+<section class="section-skills" id="skills">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    
+    <div class="skills-container">
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <div class="skill-list">
+          <div class="skill-item" data-percent="90">HTML5</div>
+          <div class="skill-item" data-percent="85">CSS3</div>
+          <div class="skill-item" data-percent="80">JavaScript</div>
+          <div class="skill-item" data-percent="75">React</div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <h3>Backend</h3>
+        <div class="skill-list">
+          <div class="skill-item" data-percent="70">Node.js</div>
+          <div class="skill-item" data-percent="65">Python</div>
+          <div class="skill-item" data-percent="60">PHP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+          <!-- Portfolio Section -->
+<section class="container" id="portfolio">
+    <div class="section-header">
+        <h2 class="section-title">My Portfolio</h2>
+        <p class="section-subtitle">A showcase of my recent work and projects</p>
+    </div>
+
+    <div class="portfolio-container">
+        <!-- Portfolio Filter -->
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="design">Graphic Design</button>
+            <button class="filter-btn" data-filter="app">Mobile Apps</button>
+        </div>
+
+        <!-- Portfolio Items -->
+        <div class="portfolio-grid">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item" data-category="web">
+                <div class="portfolio-img">
+                    <img src="assets/images/portfolio/web-project1.jpg" alt="E-commerce Website">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Website</h3>
+                        <p>Full online store with payment integration</p>
+                        <div class="portfolio-links">
+                            <a href="assets/images/portfolio/web-project1-full.jpg" data-lightbox="portfolio" data-title="E-commerce Website" class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </a>
+                            <a href="project-details.html" class="details-btn">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item" data-category="design">
+                <div class="portfolio-img">
+                    <img src="assets/images/portfolio/design-project1.jpg" alt="Brand Identity">
+                    <div class="portfolio-overlay">
+                        <h3>Brand Identity</h3>
+                        <p>Logo and branding for tech startup</p>
+                        <div class="portfolio-links">
+                            <a href="assets/images/portfolio/design-project1-full.jpg" data-lightbox="portfolio" data-title="Brand Identity" class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </a>
+                            <a href="project-details.html" class="details-btn">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item" data-category="app">
+                <div class="portfolio-img">
+                    <img src="assets/images/portfolio/app-project1.jpg" alt="Fitness App">
+                    <div class="portfolio-overlay">
+                        <h3>Fitness App</h3>
+                        <p>Mobile application for workout tracking</p>
+                        <div class="portfolio-links">
+                            <a href="assets/images/portfolio/app-project1-full.jpg" data-lightbox="portfolio" data-title="Fitness App" class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </a>
+                            <a href="project-details.html" class="details-btn">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio-item" data-category="web">
+                <div class="portfolio-img">
+                    <img src="assets/images/portfolio/web-project2.jpg" alt="Corporate Website">
+                    <div class="portfolio-overlay">
+                        <h3>Corporate Website</h3>
+                        <p>Business website with CMS integration</p>
+                        <div class="portfolio-links">
+                            <a href="assets/images/portfolio/web-project2-full.jpg" data-lightbox="portfolio" data-title="Corporate Website" class="view-btn">
+                                <i class="fas fa-expand"></i>
+                            </a>
+                            <a href="project-details.html" class="details-btn">
+                                <i class="fas fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-cta">
+            <a href="#contact" class="btn btn-primary">Request Similar Project</a>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="container" id="services">
+    <h2 class="section-title">Services</h2>
+    <div class="services-container">
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-camera-retro" aria-hidden="true"></i>
+            </div>
+            <h3 class="service-title">Graphic Design</h3>
+            <p class="service-description">Professional design services for branding, marketing materials, and digital assets.</p>
+            <a href="photoga.html" class="btn service-btn">View Details</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-laptop-code" aria-hidden="true"></i>
+            </div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-description">Custom website development with modern technologies and responsive design.</p>
+            <a href="web-development.html" class="btn service-btn">View Details</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+            </div>
+            <h3 class="service-title">System Analysis</h3>
+            <p class="service-description">Comprehensive analysis of your business systems and technical requirements.</p>
+            <a href="system-analysis.html" class="btn service-btn">View Details</a>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-laptop" aria-hidden="true"></i>
+            </div>
+            <h3 class="service-title">System Development</h3>
+            <p class="service-description">Custom software solutions tailored to your business needs.</p>
+            <a href="system-development.html" class="btn service-btn">View Details</a>
+        </div>
+    </div>
+</section>
+
+          <!-- Education Section -->
+<section class="container" id="education">
+    <div class="section-header">
+        <h2 class="section-title">My Education</h2>
+        <p class="section-subtitle">Academic journey and qualifications</p>
+    </div>
+
+    <div class="education-container">
+        <div class="education-intro">
+            <div class="intro-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="intro-title">Educational Background</h3>
+            <p class="intro-text">I've attended several prestigious institutions and earned multiple certifications in my field of study.</p>
+        </div>
+
+        <div class="education-timeline">
+            <!-- Education Item 1 -->
+            <div class="education-item">
+                <div class="edu-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="edu-content">
+                    <h4 class="edu-degree">Advanced Level Certification</h4>
+                    <span class="edu-institution">Prestige High School</span>
+                    <span class="edu-year">2018 - 2020</span>
+                    <p class="edu-description">Completed advanced studies in Sciences with distinction in Computer Science and Mathematics.</p>
+                </div>
+            </div>
+
+            <!-- Education Item 2 -->
+            <div class="education-item">
+                <div class="edu-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="edu-content">
+                    <h4 class="edu-degree">Bachelor of Science in Computer Science</h4>
+                    <span class="edu-institution">Tech University</span>
+                    <span class="edu-year">2020 - 2024</span>
+                    <p class="edu-description">Specialized in Software Engineering and Web Development, graduating with honors.</p>
+                </div>
+            </div>
+
+            <!-- Education Item 3 -->
+            <div class="education-item">
+                <div class="edu-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="edu-content">
+                    <h4 class="edu-degree">Professional Certifications</h4>
+                    <span class="edu-institution">Various Institutions</span>
+                    <span class="edu-year">2022 - Present</span>
+                    <p class="edu-description">Earned multiple professional certifications in web development, cloud computing, and UX design.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                
+<!-- Latest Projects Section -->
+<section class="container" id="latest-projects">
+    <div class="section-header">
+        <h2 class="section-title">Latest Projects</h2>
+        <p class="section-subtitle">Explore my recent creative works</p>
+    </div>
+
+    <div class="project-gallery">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-media">
+                <video class="project-video" loop muted playsinline poster="photos/Screenshot 2025-08-02 013812.jpg">
+                    <source src="videos/project1.mp4" type="video/mp4">
+                    <!-- Fallback image if video doesn't load -->
+                    <img src="photos/Screenshot 2025-08-02 013812.jpg" alt="FoodHub App Design">
+                </video>
+                <div class="media-controls">
+                    <button class="play-btn"><i class="fas fa-play"></i></button>
+                    <button class="pause-btn"><i class="fas fa-pause"></i></button>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">FoodHub App Design</h3>
+                <p class="project-category">UI/UX Design</p>
+                <p class="project-description">Modern food delivery app interface with intuitive user experience and seamless navigation.</p>
+                
+                <div class="project-interactions">
+                    <button class="like-btn">
+                        <i class="far fa-heart"></i>
+                        <span class="like-count">24</span>
+                    </button>
+                    <button class="comment-btn">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </button>
+                    <div class="share-dropdown">
+                        <button class="share-btn">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Share</span>
+                        </button>
+                        <div class="share-options">
+                            <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Copy link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="project-details.html" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-media">
+                <video class="project-video" loop muted playsinline poster="photos/foodhub.jpg">
+                    <source src="videos/project2.mp4" type="video/mp4">
+                    <img src="photos/foodhub.jpg" alt="E-commerce Website">
+                </video>
+                <div class="media-controls">
+                    <button class="play-btn"><i class="fas fa-play"></i></button>
+                    <button class="pause-btn"><i class="fas fa-pause"></i></button>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">E-commerce Platform</h3>
+                <p class="project-category">Web Development</p>
+                <p class="project-description">Full-stack e-commerce solution with payment gateway integration and inventory management.</p>
+                
+                <div class="project-interactions">
+                    <button class="like-btn">
+                        <i class="far fa-heart"></i>
+                        <span class="like-count">18</span>
+                    </button>
+                    <button class="comment-btn">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </button>
+                    <div class="share-dropdown">
+                        <button class="share-btn">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Share</span>
+                        </button>
+                        <div class="share-options">
+                            <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Copy link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="project-details.html" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="project-media">
+                <video class="project-video" loop muted playsinline poster="photos/Screenshot 2025-07-31.jpg">
+                    <source src="videos/project3.mp4" type="video/mp4">
+                    <img src="photos/Screenshot 2025-07-31.jpg" alt="Portfolio Template">
+                </video>
+                <div class="media-controls">
+                    <button class="play-btn"><i class="fas fa-play"></i></button>
+                    <button class="pause-btn"><i class="fas fa-pause"></i></button>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Portfolio Template</h3>
+                <p class="project-category">Web Design</p>
+                <p class="project-description">Responsive portfolio template with dark/light mode and animated elements.</p>
+                
+                <div class="project-interactions">
+                    <button class="like-btn">
+                        <i class="far fa-heart"></i>
+                        <span class="like-count">32</span>
+                    </button>
+                    <button class="comment-btn">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </button>
+                    <div class="share-dropdown">
+                        <button class="share-btn">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Share</span>
+                        </button>
+                        <div class="share-options">
+                            <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Copy link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="project-details.html" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <div class="project-media">
+                <video class="project-video" loop muted playsinline poster="photos/Screenshot.jpg">
+                    <source src="videos/project4.mp4" type="video/mp4">
+                    <img src="photos/Screenshot.jpg" alt="Dashboard UI Kit">
+                </video>
+                <div class="media-controls">
+                    <button class="play-btn"><i class="fas fa-play"></i></button>
+                    <button class="pause-btn"><i class="fas fa-pause"></i></button>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">Dashboard UI Kit</h3>
+                <p class="project-category">UI Design</p>
+                <p class="project-description">Customizable admin dashboard components with data visualization widgets.</p>
+                
+                <div class="project-interactions">
+                    <button class="like-btn">
+                        <i class="far fa-heart"></i>
+                        <span class="like-count">15</span>
+                    </button>
+                    <button class="comment-btn">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </button>
+                    <div class="share-dropdown">
+                        <button class="share-btn">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Share</span>
+                        </button>
+                        <div class="share-options">
+                            <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Copy link"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="project-details.html" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Contact Section -->
+<section class="container" id="contact">
+    <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">I'd love to hear from you! Reach out for collaborations or questions.</p>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <!-- Phone with direct call and SMS -->
+            <div class="contact-method">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Phone</h3>
+                    <a href="tel:+25646667673" class="contact-link">Call: +256 466 67673</a>
+                    <a href="sms:+25646667673" class="contact-link">Text Message</a>
+                </div>
+            </div>
+
+            <!-- Email with direct mailto -->
+            <div class="contact-method">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Email</h3>
+                    <a href="mailto:mugabimartin886@gmail.com?subject=Contact%20from%20your%20website" class="contact-link">
+                        mugabimartin886@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <!-- WhatsApp with direct chat -->
+            <div class="contact-method">
+                <div class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/256000498484?text=Hello%20Martin,%20I%20visited%20your%20website%20and%20want%20to%20connect" 
+                       target="_blank" 
+                       class="contact-link">
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Location with Google Maps -->
+            <div class="contact-method">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Location</h3>
+                    <a href="https://maps.google.com?q=Ggaba,Kampala,Uganda" 
+                       target="_blank" 
+                       class="contact-link">
+                        View on Google Maps
+                    </a>
+                    <p class="location-text">Ggaba, Kampala, Uganda</p>
+                </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="https://facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h3 class="form-title">Send Me a Message</h3>
+            <form id="contactForm" action="send_email.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What's this about?">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+
+                <div class="form-message">
+                    <p class="success-message">Thank you! Your message has been sent successfully.</p>
+                    <p class="error-message">Oops! Something went wrong. Please try again.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="container" id="testimonials">
+    <div class="section-header">
+        <h2 class="section-title">Client Testimonials</h2>
+        <p class="section-subtitle">What people say about my work</p>
+    </div>
+
+    <div class="testimonials-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+            <div class="testimonial-image">
+                <img src="assets/images/testimonials/client1.jpg" alt="Client Name">
+            </div>
+            <div class="testimonial-content">
+                <div class="testimonial-text">
+                    <p>"Martin's courses are top-notch! The content is well-structured and easy to follow. I've learned so much in a short time."</p>
+                </div>
+                <div class="testimonial-author">
+                    <h3>Mugabi Martin</h3>
+                    <p class="author-role">Web Developer</p>
+                </div>
+                <div class="testimonial-social">
+                    <a href="https://twitter.com/clientusername" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/clientusername" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/clientusername" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+            <div class="testimonial-image">
+                <img src="assets/images/testimonials/client2.jpg" alt="Client Name">
+            </div>
+            <div class="testimonial-content">
+                <div class="testimonial-text">
+                    <p>"Working with Martin was a game-changer for our project. His attention to detail and problem-solving skills are exceptional."</p>
+                </div>
+                <div class="testimonial-author">
+                    <h3>Sarah Johnson</h3>
+                    <p class="author-role">UX Designer</p>
+                </div>
+                <div class="testimonial-social">
+                    <a href="https://twitter.com/clientusername" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/clientusername" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+            <div class="testimonial-image">
+                <img src="assets/images/testimonials/client3.jpg" alt="Client Name">
+            </div>
+            <div class="testimonial-content">
+                <div class="testimonial-text">
+                    <p>"The website Martin developed for us exceeded all expectations. It's fast, responsive, and perfectly aligned with our brand."</p>
+                </div>
+                <div class="testimonial-author">
+                    <h3>David Kim</h3>
+                    <p class="author-role">Marketing Director</p>
+                </div>
+                <div class="testimonial-social">
+                    <a href="https://facebook.com/clientusername" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/clientusername" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Connect Section -->
+<section class="container" id="connect">
+    <div class="section-header">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">I'm always available for collaborations and conversations</p>
+    </div>
+
+    <div class="connect-container">
+        <div class="connect-content">
+            <div class="connect-intro">
+                <p class="connect-text">I'm always ready to connect with you and would be happy to hear from you. Feel free to reach out through any of these channels:</p>
+                
+                <div class="social-connect">
+                    <h3 class="connect-heading">Social Media</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/yourusername" target="_blank" aria-label="Facebook" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-methods">
+                <h3 class="connect-heading">Direct Contact</h3>
+                <div class="contact-cards">
+                    <!-- Email -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <a href="mailto:mugabimartin886@gmail.com" class="contact-link">mugabimartin886@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Phone</h4>
+                            <a href="tel:+256756016458" class="contact-link">+256 756 016458</a>
+                            <a href="sms:+256756016458" class="contact-link">Send SMS</a>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/256756016458?text=Hello%20Martin,%20I%20visited%20your%20website%20and%20want%20to%20connect" 
+                               target="_blank" 
+                               class="contact-link">
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+       
+<!-- Awards Section -->
+<section class="container" id="awards">
+    <div class="section-header">
+        <h2 class="section-title">Awards & Certifications</h2>
+        <p class="section-subtitle">Recognitions and achievements in my professional journey</p>
+    </div>
+
+    <div class="awards-container">
+        <!-- Award 1 -->
+        <div class="award-card">
+            <div class="award-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <div class="award-content">
+                <h3 class="award-title">JavaScript Certification</h3>
+                <p class="award-date">Awarded: June 2025</p>
+                <p class="award-description">Advanced JavaScript concepts and modern frameworks</p>
+                <a href="certificates/javascript-certificate.pdf" download="Martin_Mugabi_JavaScript_Certificate.pdf" class="download-btn">
+                    Download Certificate
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Award 2 -->
+        <div class="award-card">
+            <div class="award-icon">
+                <i class="fas fa-certificate"></i>
+            </div>
+            <div class="award-content">
+                <h3 class="award-title">IT English Proficiency</h3>
+                <p class="award-date">Awarded: March 2023</p>
+                <p class="award-description">Technical English for IT professionals</p>
+                <a href="certificates/it-english-certificate.pdf" download="Martin_Mugabi_IT_English_Certificate.pdf" class="download-btn">
+                    Download Certificate
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Award 3 -->
+        <div class="award-card">
+            <div class="award-icon">
+                <i class="fas fa-palette"></i>
+            </div>
+            <div class="award-content">
+                <h3 class="award-title">Graphic Design Certification</h3>
+                <p class="award-date">Awarded: January 2023</p>
+                <p class="award-description">Professional graphic design principles</p>
+                <a href="certificates/graphic-design-certificate.pdf" download="Martin_Mugabi_Graphic_Design_Certificate.pdf" class="download-btn">
+                    Download Certificate
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Award 4 -->
+        <div class="award-card">
+            <div class="award-icon">
+                <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="award-content">
+                <h3 class="award-title">CISCO Networking</h3>
+                <p class="award-date">Awarded: November 2023</p>
+                <p class="award-description">Network infrastructure and security</p>
+                <a href="certificates/cisco-certificate.pdf" download="Martin_Mugabi_CISCO_Certificate.pdf" class="download-btn">
+                    Download Certificate
+                    <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blogs Section -->
+<section class="container" id="blogs">
+    <div class="section-header">
+        <h2 class="section-title">My Blogs</h2>
+        <p class="section-subtitle">Sharing knowledge and experiences in tech</p>
+    </div>
+
+    <div class="blogs-container">
+        <!-- Blog 1 -->
+        <div class="blog-card">
+            <div class="blog-image">
+                <img src="assets/images/blogs/web-development.jpg" alt="Web Development Trends">
+            </div>
+            <div class="blog-content">
+                <div class="blog-excerpt">
+                    <h3 class="blog-title">Modern Web Development Trends in 2023</h3>
+                    <p class="blog-date">Published: June 15, 2023</p>
+                    <p class="blog-summary">Exploring the latest frameworks and technologies shaping web development this year...</p>
+                    <div class="blog-full" style="display: none;">
+                        <p>In this comprehensive guide, we dive deep into the most significant trends in web development for 2023. From the rise of serverless architectures to the growing adoption of WebAssembly, the landscape is evolving rapidly.</p>
+                        <p>We'll examine how new JavaScript frameworks are challenging React's dominance, and why TypeScript continues to gain popularity among enterprise teams. The article also covers emerging CSS features that are changing how we approach responsive design.</p>
+                        <p>Finally, we'll look at performance optimization techniques that are becoming standard practice in modern web development workflows.</p>
+                    </div>
+                </div>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="blog-card">
+            <div class="blog-image">
+                <img src="assets/images/blogs/javascript.jpg" alt="JavaScript Best Practices">
+            </div>
+            <div class="blog-content">
+                <div class="blog-excerpt">
+                    <h3 class="blog-title">JavaScript Best Practices for Clean Code</h3>
+                    <p class="blog-date">Published: May 2, 2023</p>
+                    <p class="blog-summary">Essential patterns and techniques for writing maintainable JavaScript code...</p>
+                    <div class="blog-full" style="display: none;">
+                        <p>Writing clean JavaScript is crucial for maintainable applications. This article covers the most important best practices I've learned through years of professional development.</p>
+                        <p>We'll explore proper variable naming, effective use of functions, modular architecture patterns, and error handling strategies. The guide includes practical examples showing before-and-after code improvements.</p>
+                        <p>Special attention is given to ES6+ features that can help simplify your code while making it more readable and efficient.</p>
+                    </div>
+                </div>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="blog-card">
+            <div class="blog-image">
+                <img src="assets/images/blogs/ui-ux.jpg" alt="UI/UX Principles">
+            </div>
+            <div class="blog-content">
+                <div class="blog-excerpt">
+                    <h3 class="blog-title">Essential UI/UX Principles for Developers</h3>
+                    <p class="blog-date">Published: April 10, 2023</p>
+                    <p class="blog-summary">Key design concepts every developer should know to create better user experiences...</p>
+                    <div class="blog-full" style="display: none;">
+                        <p>As developers, understanding basic UI/UX principles can dramatically improve the products we build. This article breaks down the most important concepts in an accessible way.</p>
+                        <p>We cover fundamental principles like visual hierarchy, consistency, and affordance. You'll learn practical techniques for improving usability and accessibility in your projects.</p>
+                        <p>The guide includes before-and-after examples showing how small design changes can significantly impact user experience and engagement metrics.</p>
+                    </div>
+                </div>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Blog 4 -->
+        <div class="blog-card">
+            <div class="blog-image">
+                <img src="assets/images/blogs/career.jpg" alt="Tech Career Growth">
+            </div>
+            <div class="blog-content">
+                <div class="blog-excerpt">
+                    <h3 class="blog-title">Growing Your Career as a Junior Developer</h3>
+                    <p class="blog-date">Published: March 22, 2023</p>
+                    <p class="blog-summary">Practical advice for advancing your tech career in the first few years...</p>
+                    <div class="blog-full" style="display: none;">
+                        <p>Starting out in tech can be challenging. This article shares actionable strategies I've used to grow from a junior developer to a more senior role.</p>
+                        <p>We discuss the importance of continuous learning, building a professional network, and seeking mentorship. The guide includes specific recommendations for online resources and communities that can accelerate your growth.</p>
+                        <p>You'll also learn how to identify valuable opportunities within your current role and how to effectively communicate your accomplishments when seeking advancement.</p>
+                    </div>
+                </div>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- FAQ Section -->
+<section class="container" id="faq">
+    <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Common questions about my services and expertise</p>
+    </div>
+
+    <div class="faq-container">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What services do you offer?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>I specialize in full-stack web development and graphic design services. My offerings include:</p>
+                <ul>
+                    <li>Custom website development</li>
+                    <li>Responsive web design</li>
+                    <li>UI/UX design</li>
+                    <li>Frontend development (HTML, CSS, JavaScript)</li>
+                    <li>Backend development (Node.js, Python)</li>
+                    <li>Brand identity and logo design</li>
+                    <li>Print and digital graphic design</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What technologies are you proficient in?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>My technical skills span across multiple technologies and tools:</p>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Frontend:</h4>
+                        <p>HTML5, CSS3, JavaScript, React, Vue.js, Bootstrap, Tailwind CSS</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Backend:</h4>
+                        <p>Node.js, Express, Python, Django, REST APIs, MongoDB, MySQL</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Design:</h4>
+                        <p>Adobe Photoshop, Illustrator, XD, Figma, Canva</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>What is your typical project workflow?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>I follow a structured 5-phase approach to ensure quality results:</p>
+                <ol>
+                    <li><strong>Discovery:</strong> Requirements gathering and planning</li>
+                    <li><strong>Design:</strong> Wireframing and prototyping</li>
+                    <li><strong>Development:</strong> Coding and implementation</li>
+                    <li><strong>Testing:</strong> Quality assurance and revisions</li>
+                    <li><strong>Delivery:</strong> Deployment and documentation</li>
+                </ol>
+                <p>This process ensures clear communication and measurable milestones throughout the project.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+            <div class="faq-question">
+                <h3>How do you handle revisions and feedback?</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+                <p>I believe collaboration is key to successful projects. My revision policy includes:</p>
+                <ul>
+                    <li>2-3 rounds of revisions included in most project quotes</li>
+                    <li>Clear feedback channels through email and project management tools</li>
+                    <li>48-hour turnaround for minor revisions</li>
+                    <li>Weekly progress updates on larger projects</li>
+                    <li>Final approval before project delivery</li>
+                </ul>
+                <p>I'm committed to making sure you're completely satisfied with the final product.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-cta">
+            <h2 class="footer-title">Get in Touch With Me</h2>
+            <h3 class="footer-subtitle">Boost your productivity with my services</h3>
+            <p class="footer-text">I respond promptly to all inquiries. Let's discuss how I can help with your project.</p>
+            <a href="#contact" class="cta-button">Get Started <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-main">
+        <div class="footer-columns">
+            <!-- Quick Links Column 1 -->
+            <div class="footer-column">
+                <h4 class="column-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#about" class="footer-link">About Me</a></li>
+                    <li><a href="#skills" class="footer-link">Skills</a></li>
+                    <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                    <li><a href="#services" class="footer-link">Services</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links Column 2 -->
+            <div class="footer-column">
+                <h4 class="column-title">More</h4>
+                <ul class="footer-links">
+                    <li><a href="#projects" class="footer-link">Latest Projects</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                    <li><a href="#testimonials" class="footer-link">Testimonials</a></li>
+                    <li><a href="#awards" class="footer-link">Awards</a></li>
+                    <li><a href="#blog" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Links Column -->
+            <div class="footer-column">
+                <h4 class="column-title">Connect With Me</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com/yourusername" target="_blank" aria-label="Facebook" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:mugabimartin886@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> mugabimartin886@gmail.com
+                    </a>
+                    <a href="tel:+256756016458" class="contact-link">
+                        <i class="fas fa-phone-alt"></i> +256 756 016458
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="copyright">
+            <p>&copy; <span id="current-year"></span> All Rights Reserved by <strong>Martin Mugabi</strong></p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
