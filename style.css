@@ -64,6 +64,14 @@ body {
     overflow-x: hidden;
 }
 
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     color: var(--dark-color);
@@ -332,8 +340,8 @@ a:hover {
 
 .hamburger {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   position: relative;
 }
 
@@ -651,7 +659,10 @@ a:hover {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero {
+    height: auto;
     min-height: 500px;
+    padding-top: 120px;
+    padding-bottom: 40px;
   }
   
   .hero-actions {
@@ -2024,11 +2035,24 @@ a:hover {
 
 /* Testimonials Section */
 .testimonials-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
+    margin: 5px;
     margin-top: 40px;
 }
+
+/* ...existing code... */
+.testimonial-image img {
+  width: 100px;         /* Adjust size as needed */
+  height: 100px;        /* Adjust size as needed */
+  object-fit: cover;    /* Ensures the image covers the area */
+     /* Makes the image perfectly round */
+  border: 3px solid #eee; /* Optional: adds a border for style */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Optional: subtle shadow */
+}
+/* ...existing code... */
 
 .testimonial-card {
     background: #fff;
@@ -2038,6 +2062,7 @@ a:hover {
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
+    max-width: 350px;
 }
 
 .testimonial-card:hover {
@@ -2303,6 +2328,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     border-top: 4px solid #3498db;
+    justify-items: center;
 }
 
 .award-card:hover {
@@ -2340,7 +2366,7 @@ a:hover {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #3498db;
+    background: linear-gradient(135deg, #ff416c, #8f00ff, #ffb6c1);
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -2352,7 +2378,7 @@ a:hover {
 }
 
 .download-btn:hover {
-    background: #2980b9;
+    background: #9dd0f3;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
 }
