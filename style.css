@@ -65,20 +65,15 @@ body {
 }
 
 body {
-    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--dark-color);
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
+
 
 h1 {
     font-size: 2.5rem;
@@ -203,20 +198,23 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  min-height: 48px;
+  padding: 0.5rem 0;
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #2c3e50;
   text-decoration: none;
+  line-height: 1;
 }
 
 /* Navigation Styles */
 .primary-nav {
   display: flex;
   align-items: center;
+  height: 48px;
 }
 
 .nav-list {
@@ -224,11 +222,12 @@ a:hover {
   list-style: none;
   margin: 0;
   padding: 0;
+  height: 48px;
 }
 
 .nav-item {
   position: relative;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 
 .nav-link {
@@ -238,6 +237,10 @@ a:hover {
   padding: 0.5rem 0;
   position: relative;
   transition: color 0.3s ease;
+  line-height: 1;
+    font-family: 'Montserrat', 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
 }
 
 .nav-link::after {
@@ -295,6 +298,8 @@ a:hover {
   transform: translateY(10px);
   transition: all 0.3s ease;
   z-index: 100;
+  max-height: 180px;      /* Reduced max height for dropdown scroll */
+  overflow-y: auto; 
 }
 
 .dropdown:hover .dropdown-menu,
@@ -465,36 +470,7 @@ a:hover {
   position: relative;
 }
 
-.hero-video-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
 
-.hero-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-fallback {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-}
 
 .hero-content {
   position: relative;
@@ -508,6 +484,13 @@ a:hover {
 .hero-text-content {
   margin-bottom: 2.5rem;
   animation: fadeInUp 1s ease-out;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    line-height: 1.5;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
 }
 
 .hero-title {
@@ -515,6 +498,7 @@ a:hover {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
+    color: #2c3e50; /* Dark blue for title */
 }
 
 .hero-title .greeting {
@@ -677,7 +661,7 @@ a:hover {
 
 /* About Me Section Styles */
 .section-about {
-  padding: 5rem 0;
+
   background-color: #f8f9fa;
   position: relative;
 }
@@ -746,13 +730,17 @@ a:hover {
 .intro-text {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #555;
+  color: #080808;
   margin-bottom: 2rem;
   padding: 1.5rem;
   background: white;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   position: relative;
+  font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+
+
 }
 
 .intro-text::before {
