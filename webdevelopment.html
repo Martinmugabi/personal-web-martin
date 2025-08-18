@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A portfolio showcasing my web development projects.">
+  <meta name="keywords" content="web development, portfolio, programming, design">
+  <meta name="author" content="martin">
+  <title>Web Development</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8fafc;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      color: #2563eb;
+    }
+    .project-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .project-card h2 {
+      margin: 10px 0;
+      color: #1e293b;
+    }
+    .view-details {
+      display: inline-block;
+  margin: 8px 0 12px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+    }
+
+    .view-details:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: scale(1.05);
+}
+
+/* Project Description */
+.project-card p {
+  display: none;
+  padding: 0 15px 15px;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.project-card.active p {
+  display: block;
+  animation: slideUpFade 0.4s ease-in-out;
+}
+
+/* Slide-up animation */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #1e293b;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  border-radius: 6px 6px 0 0;
+}
+
+/* =========================
+   Responsive Media Queries
+=========================== */
+@media (max-width: 768px) {
+  .project-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+  .project-card h2 {
+    font-size: 1.2rem;
+  }
+  .view-details {
+    width: 80%;
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+}
+    .view-details:hover {
+      background: #1d4ed8;
+    }
+    .project-card p {
+      display: none;
+      padding: 0 15px 15px;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #444;
+    }
+    .project-card.active p {
+      display: block;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <section class="web-development">
+    <h1>Web Development Portfolio</h1>
+    <p style="text-align:center;">Explore my web development projects showcasing modern design and functionality.</p>
+    <div class="project-gallery">
+      
+      <div class="project-card">
+        <img src="web1.jpg" alt="Web Project 1">
+        <h2>Personal Portfolio Website</h2>
+        <button class="view-details">View Details</button>
+        <p>A responsive personal portfolio built with HTML, CSS, and JavaScript. Features sections for projects, services, contact, and smooth scrolling animations.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="web2.jpg" alt="Web Project 2">
+        <h2>E-commerce Store</h2>
+        <button class="view-details">View Details</button>
+        <p>An online store built with React and Node.js. Includes product listings, shopping cart, authentication, and payment integration using Stripe API.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="web3.jpg" alt="Web Project 3">
+        <h2>Blog Platform</h2>
+        <button class="view-details">View Details</button>
+        <p>A full-stack blog platform with user authentication, comment system, and rich text editor. Built using Django and Bootstrap for styling.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="web4.jpg" alt="Web Project 4">
+        <h2>School Management System</h2>
+        <button class="view-details">View Details</button>
+        <p>A management system with modules for students, staff, and accounts. Developed using Java Swing, MySQL, and integrated reporting features.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="web5.jpg" alt="Web Project 5">
+        <h2>Restaurant Website</h2>
+        <button class="view-details">View Details</button>
+        <p>A restaurant website with interactive menus, reservation booking, and gallery. Built with HTML, CSS animations, and PHP for backend form handling.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer style="text-align:center; padding:15px; background:#1e293b; color:#fff;">
+    <p>© 2024 My Portfolio | Contact: martin@example.com</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll(".view-details").forEach(button => {
+      button.addEventListener("click", () => {
+        const card = button.parentElement;
+        card.classList.toggle("active");
+        button.textContent = card.classList.contains("active") ? "Hide Details" : "View Details";
+      });
+    });
+  </script>
+</body>
+</html>
