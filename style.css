@@ -1461,6 +1461,79 @@ a:hover {
     }
 }
 
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    
+    .section-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+        color: #666;
+    }
+    
+    .project-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+    
+    .project-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .project-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .project-info {
+        padding: 20px;
+    }
+    
+    .project-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #333;
+    }
+    
+    .project-category {
+        color: #6e8efb;
+        font-weight: 500;
+        margin-bottom: 12px;
+        display: block;
+    }
+    
+    .project-description {
+        color: #666;
+        line-height: 1.5;
+    }
+
+
+
 
 /* Project Gallery Enhancements */
 /* Projects Section */
